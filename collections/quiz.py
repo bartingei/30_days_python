@@ -50,7 +50,11 @@ for answer in answers:
     print(answer , end=" ")
 print()
 
-print("guess ", end=" ")
+print("guess  ", end=" ")
 for guess in guesses:
     print(guess, end=" ")
 print()
+
+score = score / len(questions) * 100
+
+print(f"Your score is {score}%")
