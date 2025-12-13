@@ -1,5 +1,7 @@
 # functions = a block of reusable code
 #              place () after the function name to invoke it
+# return  =  is used to end a function and send the result back to the caller
+
 
 """
 
@@ -23,7 +25,7 @@ song1()
 song2()
 song1()'''
 
-def hello(name, age):
+"""def hello(name, age):
     print(f"hello {name}, you are {age} years old! ")
 
-hello("johnpaul", 12)
+hello("johnpaul", 12)"""
