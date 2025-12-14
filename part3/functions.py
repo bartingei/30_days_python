@@ -29,3 +29,34 @@ song1()'''
     print(f"hello {name}, you are {age} years old! ")
 
 hello("johnpaul", 12)"""
+
+char = "*"
+
+def drawRect():
+    for i in range(1, 6):
+        for j in range(1,6):
+            print(char, end=" ")
+        print()
+        
+print("*" * 10, " Rectangle ", "*" * 10)
+drawRect()
+
+def drawTriangle():
+    for k in range(0,6,1):
+        for l in range(k):
+            print(k, end=" ")
+        print()
+
+print("*" * 10, " Triangle ", "*" * 10)
+drawTriangle()
+
+#drawing inverted triangle
+
+def invertedTriangle():
+    for m in range(6,0,-1):
+        for n in range(m):
+            print(m , end=" ")
+        print()
+
+print("*" * 10, " inverted Triangle ","*" * 10)
+invertedTriangle()
