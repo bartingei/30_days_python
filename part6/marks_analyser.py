@@ -19,16 +19,30 @@ marks = []
 is_running = True
 
 def getMarks():
-	exams = int(input("How many Exams? "))
 	while is_running:
 		count = 0
-		mark = input("Enter your marks (Code: 2131 to finish)")
+		mark = int(input("Enter your marks (Code: 2131 to finish)"))
 
 		if mark == "2131":
 			break
 		else:
 			marks.append(mark)
 			len(marks) == count
-	print(f"{count} items")
-	print(marks)
+	return marks
+#	print(f"{count} items")
+#print(marks)
+total_exams = len(marks)
+
+def average():
+	total = 0
+	for mark in marks:
+		total += mark
+	print(f"Total: {total}")
+
+	average = (total / total_exams)
+	return average
+
+print("Total number of exams: ",total_exams)
+
 getMarks()
+average()
