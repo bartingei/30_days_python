@@ -13,36 +13,24 @@
 #calculate_average(total, count) → returns average
 #find_highest(marks) → returns highest mark
 #find_lowest(marks) → returns lowest mark
-
+# just a lil something to push to git 😂
 
 marks = []
-is_running = True
 
 def getMarks():
-	while is_running:
-		count = 0
-		mark = int(input("Enter your marks (Code: 2131 to finish)"))
-
-		if mark == "2131":
-			break
-		else:
-			marks.append(mark)
-			len(marks) == count
-	return marks
-#	print(f"{count} items")
-#print(marks)
-total_exams = len(marks)
+    total_exams = int(input("How many exams do you want to enter? "))
+    for i in range(total_exams):
+        mark = int(input(f"Enter mark for exam {i+1}: "))
+        marks.append(mark)
+    return marks
 
 def average():
-	total = 0
-	for mark in marks:
-		total += mark
-	print(f"Total: {total}")
-
-	average = (total / total_exams)
-	return average
-
-print("Total number of exams: ",total_exams)
+    total = sum(marks)
+    print(f"Total: {total}")
+    if len(marks) == 0:
+        return 0
+    return total / len(marks)
 
 getMarks()
-average()
+print("Total number of exams: ", len(marks))
+print(f"Average: {average()}")
