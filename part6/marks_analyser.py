@@ -14,6 +14,8 @@
 #find_highest(marks) → returns highest mark
 #find_lowest(marks) → returns lowest mark
 # just a lil something to push to git 😂
+#we shall continue this another day
+
 
 marks = []
 
