@@ -15,3 +15,4 @@ def fibonacci(n):
 num = int(input("Enter a number: "))
 print(f"The {num}th Fibonacci number is:", fibonacci(num))
 
+# going to read nore on this
