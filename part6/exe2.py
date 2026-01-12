@@ -17,3 +17,4 @@ if has_digit and has_letter and long_enough:
 else:
     print("Weak password")
 
+# this is a random comment for push
