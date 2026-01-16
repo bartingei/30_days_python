@@ -28,6 +28,9 @@ def merge(left, right):
     return sorted_arr
 
 
-numbers = [87, 20, 100, 43, 222, 6, 12, 98, 33]
+numbers = [87, 20, 100, 43, 122, 6, 12, 98, 33]
 print(merge_sort(numbers))
 
+# merge sort array uses recursive function
+# this helps split the array over and over
+# later the array is merged 
