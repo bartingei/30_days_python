@@ -10,3 +10,9 @@ print("Welcome to 2026")
 
 # 7th jan, back to work tomorrow
 
+# gonna try out some new features this year
+# let's see how it goes
+def celebrate_new_year():
+    print("Wishing everyone a prosperous 2026!")    
+celebrate_new_year()
+# added a function to celebrate new year
